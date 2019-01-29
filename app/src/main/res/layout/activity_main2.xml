@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <com.turingtechnologies.materialscrollbar.TouchScrollBar
+        android:id="@+id/touchScrollBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingEnd="4dp"
+        app:msb_barColor="@android:color/transparent"
+        app:msb_handleColor="@color/design_default_color_primary"
+        app:msb_handleOffColor="#ccc9c9"
+        app:msb_lightOnTouch="true"
+        app:msb_recyclerView="@id/recyclerView"
+        app:msb_scrollMode="lastElement" />
+
+</RelativeLayout>
